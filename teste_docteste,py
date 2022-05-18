@@ -1,0 +1,32 @@
+import doctest
+
+def soma(x,y):
+    """
+    >>> soma(2,3)
+    5
+    """
+    return x + y
+
+def divide(x,z):
+    
+    """
+    >>> divide(2,1)
+    Traceback (most recent call last):
+    ...
+    ZeroDivisionError: division by zero
+    """
+    
+    return x/z
+
+
+def testacondicao(frase):
+    """"
+    
+    >>> testacondicao("Doctest Python")
+    Doctest Python
+    """
+    print(frase)
+
+
+
+doctest.testmod(verbose=True)
